@@ -31,7 +31,7 @@ $routes->setAutoRoute(true);
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 $routes->get('/(:any)', 'Home::index/$1');
-$routes->get('/cmF5eWFudGVjaG1haWxlcg==/(:any)', 'Home::mailer/$1');
+$routes->post('/cmF5eWFudGVjaG1haWxlcg==/(:any)', 'Home::mailer/$1');
 // $routes->get('/email', 'Home::email');
 
 
