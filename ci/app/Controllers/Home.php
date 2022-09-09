@@ -116,7 +116,7 @@ class Home extends BaseController
 		$email->setMessage($Message);
 
 		$email->send();
-		// echo $email->printDebugger(['headers','subject','body']);
+		echo $email->printDebugger(['headers','subject','body']);
 		// return view('email');
 	}
 
