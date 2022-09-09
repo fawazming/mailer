@@ -110,7 +110,7 @@ class Home extends BaseController
 	{
 		$email = \Config\Services::email();
 
-		$email->setFrom('admin@commercecast.sgm.ng', 'RayyanTech Mailer');
+		$email->setFrom($_ENV['SMTPUser'], 'RayyanTech Mailer');
 		$email->setTo($sendEmail);
 		$email->setSubject($Subject);
 		$email->setMessage($Message);
