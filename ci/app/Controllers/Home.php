@@ -11,7 +11,7 @@ class Home extends BaseController
     public function mailer($ema)
     {
         $email = base64_decode($ema);
-        $incoming = $this->request->getPost();
+        $incoming = $this->request->getGet();
         $email = $email.'@gmail.com';
         $data = '';
         foreach ($incoming as $key => $value) {
